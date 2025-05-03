@@ -219,7 +219,7 @@ header {
       grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
 
       .icon-block {
-        font-size: 40px;
+        font-size: 40px !important;
       }
     }
 
