@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: white;
+}
+
 .clearfix::after {
   content: '';
   clear: both;
@@ -978,17 +982,8 @@ footer .footer-info .contact i {
   list-style-type: symbols("👉");
 }
 
-body {
-  background: #ffffff;
-}
 
-a {
-  color: #dddddd;
-}
 
-a:hover {
-  color: white;
-}
 
 .to-right {
   border-left: transparent;
