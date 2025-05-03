@@ -55,6 +55,7 @@ header {
 
   .fa-moon {
     color: #f1f0ee;
+
     &:hover {
       background-color: #424241;
     }
@@ -70,31 +71,25 @@ header {
 
   .fa-instagram:hover {
     background: #f09433;
-    background: -moz-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background: -moz-linear-gradient(45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%);
+    background: -webkit-linear-gradient(45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%);
+    background: linear-gradient(45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
   }
 
   .fa-facebook-f:hover {
@@ -221,7 +216,11 @@ header {
     padding: 40px 50px;
 
     @media only screen and (max-width: 600px) {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+
+      .icon-block {
+        font-size: 40px;
+      }
     }
 
     .icon-block {
@@ -237,6 +236,7 @@ header {
           opacity: 0.8;
         }
       }
+
       .fa-react {
         color: #61dafb;
       }
@@ -314,13 +314,16 @@ header {
   border-left: 3px solid $regularFontColor;
   padding: 0 30px;
   margin-left: 185px;
+
   @media (max-width: 767px) {
     margin-left: 0;
     padding-right: 0;
   }
+
   .item {
     position: relative;
     margin-bottom: 40px;
+
     &::before {
       content: '';
       position: absolute;
@@ -333,6 +336,7 @@ header {
       border: 3px solid #009688;
       border: 3px solid $regularFontColor;
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -348,24 +352,30 @@ header {
       font-size: 18px;
     }
   }
+
   .company-name {
     color: $regularFontColor;
   }
+
   .location {
     position: absolute;
     right: 0;
     top: 2px;
+
     .fa {
       margin-right: 8px;
     }
   }
+
   .job-info {
     position: absolute;
     left: -185px;
     top: 0;
+
     .title {
       color: $regularFontColor;
     }
+
     @media (max-width: 767px) {
       position: static;
       margin-bottom: 1rem;
@@ -459,6 +469,7 @@ footer {
 
 .page-title {
   padding: 0 15px;
+
   h3 {
     font-size: 20px;
     padding: 0 0 10px 0;

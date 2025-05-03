@@ -686,8 +686,12 @@ header nav .menu li a {
 
 @media only screen and (max-width: 600px) {
   .intro-block .tech-stack {
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  }
+
+  .intro-block .tech-stack .icon-block {
+    font-size: 40px;
   }
 }
 

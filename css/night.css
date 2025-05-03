@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Kanit:900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap");
+
 *,
 *:after,
 *:before {
@@ -95,80 +96,104 @@ img {
 }
 
 @media only screen and (min-width: 600px) {
+
   /* For tablets: */
   .col-s-1 {
     width: 8.33%;
   }
+
   .col-s-2 {
     width: 16.66%;
   }
+
   .col-s-3 {
     width: 25%;
   }
+
   .col-s-4 {
     width: 33.33%;
   }
+
   .col-s-5 {
     width: 41.66%;
   }
+
   .col-s-6 {
     width: 50%;
   }
+
   .col-s-7 {
     width: 58.33%;
   }
+
   .col-s-8 {
     width: 66.66%;
   }
+
   .col-s-9 {
     width: 75%;
   }
+
   .col-s-10 {
     width: 83.33%;
   }
+
   .col-s-11 {
     width: 91.66%;
   }
+
   .col-s-12 {
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) {
+
   /* For desktop: */
   .col-1 {
     width: 8.33%;
   }
+
   .col-2 {
     width: 16.66%;
   }
+
   .col-3 {
     width: 25%;
   }
+
   .col-4 {
     width: 33.33%;
   }
+
   .col-5 {
     width: 41.66%;
   }
+
   .col-6 {
     width: 50%;
   }
+
   .col-7 {
     width: 58.33%;
   }
+
   .col-8 {
     width: 66.66%;
   }
+
   .col-9 {
     width: 75%;
   }
+
   .col-10 {
     width: 83.33%;
   }
+
   .col-11 {
     width: 91.66%;
   }
+
   .col-12 {
     width: 100%;
   }
@@ -215,12 +240,15 @@ img {
   .padding-0 {
     padding: 0px;
   }
+
   .padding-5 {
     padding: 5px;
   }
+
   .padding-10 {
     padding: 5px;
   }
+
   .padding-15 {
     padding: 5px;
   }
@@ -319,19 +347,19 @@ img {
   outline: none;
   border-color: #80bdff;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.5);
 }
 
 .form-group .is-invalid {
   border: 1px solid #dc3545;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 .form-group .is-valid {
   border: 1px solid #13ce66;
   -webkit-box-shadow: 0 0 0 0.2rem #13ce6770;
-          box-shadow: 0 0 0 0.2rem #13ce6770;
+  box-shadow: 0 0 0 0.2rem #13ce6770;
 }
 
 .form-group .invalid-feedback {
@@ -425,7 +453,7 @@ img {
   outline: none;
   border-color: #80bdff;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.5);
 }
 
 .btn-danger {
@@ -437,7 +465,7 @@ img {
   outline: none;
   border-color: #dc3545;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 header {
@@ -518,7 +546,7 @@ header nav .menu li a {
 .header-tools .fa-instagram:hover {
   background: #f09433;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
 .header-tools .fa-facebook-f:hover {
@@ -651,15 +679,19 @@ header nav .menu li a {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(130px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   grid-gap: 15px;
   padding: 40px 50px;
 }
 
 @media only screen and (max-width: 600px) {
   .intro-block .tech-stack {
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  }
+
+  .intro-block .tech-stack .icon-block {
+    font-size: 40px;
   }
 }
 
@@ -668,10 +700,10 @@ header nav .menu li a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: pointer;
   font-size: 60px;
   padding: 10px;
@@ -965,4 +997,5 @@ a:hover {
 .to-right {
   border-left: solid 650px #02183b;
 }
+
 /*# sourceMappingURL=night.css.map */
